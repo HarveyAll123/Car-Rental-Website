@@ -88,6 +88,7 @@ return true;
                 </div>
                 <div class="form-group">
                   <input type="submit" value="Sign Up" name="signup" id="submit" class="btn btn-block">
+                  <p> ** Don't forget to bring a photocopy of your identity card and driver's license when you want to pick up the car **</p>
                 </div>
               </form>
             </div>
