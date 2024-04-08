@@ -18,8 +18,8 @@
               <a href="tel:61-1234-5678-09">0217393907</a> </div>
             <div class="social-follow">
               <ul>
-                <li><a href="https://code-projects.org/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://code-projects.org/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://google.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://google.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
               </ul>
             </div>
    <?php   if(strlen($_SESSION['login'])==0)
