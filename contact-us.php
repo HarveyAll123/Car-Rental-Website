@@ -149,10 +149,10 @@ $error="Something went wrong. Please try again";
         <h3>Contact Info</h3>
         <div class="contact_detail">
               <?php 
-$pagetype=$_GET['type'];
+// $pagetype=$_GET['type'];
 $sql = "SELECT Address,EmailId,ContactNo from tblcontactusinfo";
 $query = $dbh -> prepare($sql);
-$query->bindParam(':pagetype',$pagetype,PDO::PARAM_STR);
+//$query->bindParam(':pagetype',$pagetype,PDO::PARAM_STR);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=1;
@@ -174,7 +174,10 @@ foreach($results as $result)
               <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php   echo htmlentities($result->ContactNo); ?></a></div>
             </li>
           </ul>
-        <?php }} ?>
+        <?php }} //else{
+          //echo "<p>No contact information found.</p>";
+        //}
+         ?>
         </div>
       </div>
     </div>

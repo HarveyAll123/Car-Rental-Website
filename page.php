@@ -59,6 +59,7 @@ $query->bindParam(':pagetype',$pagetype,PDO::PARAM_STR);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=1;
+
 if($query->rowCount() > 0)
 {
 foreach($results as $result)
@@ -83,12 +84,8 @@ foreach($results as $result)
     <div class="section-header text-center">
 
 
-      <h2><?php   echo htmlentities($result->PageName); ?></h2>
-      <p><!--?php  echo $result->detail; ? -->
-      <span style="color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;">
-      Auto RentID was founded in 2024 by a passionate group of automotive enthusiasts from the computer science students of a leading university. Driven by our love for cars and technology, we created Auto RentID to revolutionize the car rental industry. Our mission is to cater to the ever-evolving needs of travelers and locals alike, providing a wide range of high-quality, affordable rental cars. We pride ourselves on our innovative platform that makes car rental accessible and hassle-free. At Auto RentID, we are committed to offering exceptional service and the best possible rental experience. Join us on the road to explore new destinations in comfort and style with a vehicle that feels like your own."</span>
-      
-    </p>
+    <h2><?php   echo htmlentities($result->PageName); ?></h2>
+      <p><?php  echo $result->detail; ?> </p>
     </div>
    <?php } }?>
   </div>
