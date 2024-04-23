@@ -80,17 +80,30 @@ error_reporting(0);
         <div class="result-sorting-wrapper">
           <div class="sorting-count">
 <?php 
-//Query for Listing count
-$sql = "SELECT id from tblvehicles";
-$query = $dbh -> prepare($sql);
-$query->bindParam(':vhid',$vhid, PDO::PARAM_STR);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=$query->rowCount();
+// Database connection setup - Ensure that $dbh is properly initialized
+// It is assumed that $dbh is an instance of PDO and is correctly configured
+
+// Query for Listing count
+$sql = "SELECT id FROM tblvehicles"; // Make sure the table name and column name are correct
+$query = $dbh->prepare($sql);
+
+// The following line seems unnecessary unless a specific vehicle ID is being queried
+// $query->bindParam(':vhid', $vhid, PDO::PARAM_STR); // This line should be removed if all listings are being counted
+
+$query->execute(); // Execute the query
+$results = $query->fetchAll(PDO::FETCH_OBJ); // Fetch the results as an object
+$cnt = $query->rowCount(); // Count the number of rows returned
+
+// Display the count of listings
+echo "<p><span>" . htmlentities($cnt) . " Listings</span></p>";
 ?>
-<p><span><?php echo htmlentities($cnt);?> Listings</span></p>
-</div>
-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <?php $sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand";
 $query = $dbh -> prepare($sql);
