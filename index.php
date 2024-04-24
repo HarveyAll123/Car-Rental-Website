@@ -137,7 +137,7 @@ foreach($results as $result)
         <div class="fun-facts-m">
           <div class="cell">
             <h2><i class="fa fa-car" aria-hidden="true"></i>5+</h2>
-            <p>New Cars For Sale</p>
+            <p>New Cars For Rent</p>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@ foreach($results as $result)
         <div class="fun-facts-m">
           <div class="cell">
             <h2><i class="fa fa-car" aria-hidden="true"></i>10+</h2>
-            <p>Used Cars For Sale</p>
+            <p>Used Cars For Rent</p>
           </div>
         </div>
       </div>
