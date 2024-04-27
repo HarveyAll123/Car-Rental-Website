@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2024 at 09:13 AM
+-- Generation Time: Apr 14, 2024 at 09:53 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,7 +39,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `UserName`, `Password`, `updationDate`) VALUES
-(1, 'admin', '5c428d8875d2948607f3e3fe134d71b4', '2024-04-10 12:22:38');
+(1, 'admin', '5c428d8875d2948607f3e3fe134d71b4', '2017-06-18 12:22:38');
 
 -- --------------------------------------------------------
 
@@ -63,10 +63,9 @@ CREATE TABLE `tblbooking` (
 --
 
 INSERT INTO `tblbooking` (`id`, `userEmail`, `VehicleId`, `FromDate`, `ToDate`, `message`, `Status`, `PostingDate`) VALUES
-(1, 'test@gmail.com', 2, '09/04/2024', '1-/04/2024', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco', 1, '2024-04-10 20:15:43'),
-(2, 'test@gmail.com', 3, '18/04/2024', '20/04/2024', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco', 2, '2024-04-11 08:15:43'),
-(3, 'test@gmail.com', 4, '09/04/2024', '10/04/2024', 'Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ', 0, '2024-04-17 06:10:06'),
-(4, 'demo@gmail.com', 1, '23/04/2024', '30/04/2024', 'I need this car ASAP', 0, '2024-04-23 14:47:50');
+(1, 'test@gmail.com', 2, '22/06/2017', '25/06/2017', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco', 1, '2017-06-19 20:15:43'),
+(2, 'test@gmail.com', 3, '30/06/2017', '02/07/2017', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco', 2, '2017-06-26 20:15:43'),
+(3, 'test@gmail.com', 4, '02/07/2017', '07/07/2017', 'Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ', 0, '2017-06-26 21:10:06');
 
 -- --------------------------------------------------------
 
@@ -86,12 +85,12 @@ CREATE TABLE `tblbrands` (
 --
 
 INSERT INTO `tblbrands` (`id`, `BrandName`, `CreationDate`, `UpdationDate`) VALUES
-(1, 'Maruti', '2024-04-07 03:24:34', '2024-04-27 06:42:23'),
-(2, 'BMW', '2024-04-07 03:40:50', NULL),
-(3, 'Audi', '2024-04-07 03:50:03', NULL),
-(4, 'Nissan', '2024-04-07 03:55:13', NULL),
-(5, 'Toyota', '2024-04-07 04:03:24', NULL),
-(7, 'Marutiu', '2024-04-07 04:35:13', NULL);
+(1, 'Maruti', '2017-06-18 16:24:34', '2017-06-19 06:42:23'),
+(2, 'BMW', '2017-06-18 16:24:50', NULL),
+(3, 'Audi', '2017-06-18 16:25:03', NULL),
+(4, 'Nissan', '2017-06-18 16:25:13', NULL),
+(5, 'Toyota', '2017-06-18 16:25:24', NULL),
+(7, 'Marutiu', '2017-06-19 06:22:13', NULL);
 
 -- --------------------------------------------------------
 
@@ -134,7 +133,7 @@ CREATE TABLE `tblcontactusquery` (
 --
 
 INSERT INTO `tblcontactusquery` (`id`, `name`, `EmailId`, `ContactNumber`, `Message`, `PostingDate`, `status`) VALUES
-(1, 'Harry Den', 'webhostingamigo@gmail.com', '2147483647', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2024-04-08 10:03:07', 1);
+(1, 'Harry Den', 'webhostingamigo@gmail.com', '2147483647', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2017-06-18 10:03:07', 1);
 
 -- --------------------------------------------------------
 
@@ -176,7 +175,7 @@ CREATE TABLE `tblsubscribers` (
 --
 
 INSERT INTO `tblsubscribers` (`id`, `SubscriberEmail`, `PostingDate`) VALUES
-(1, 'anuj.lpu1@gmail.com', '2024-04-09 13:35:32');
+(1, 'anuj.lpu1@gmail.com', '2017-06-22 16:35:32');
 
 -- --------------------------------------------------------
 
@@ -197,8 +196,8 @@ CREATE TABLE `tbltestimonial` (
 --
 
 INSERT INTO `tbltestimonial` (`id`, `UserEmail`, `Testimonial`, `PostingDate`, `status`) VALUES
-(1, 'Deustchland@gmail.com', 'I recently rented a car for a family road trip through Auto RentID, and I couldn\'t be happier with the experience. The booking process was a breeze, the car selection was impressive, and the prices were unbeatable. We found the perfect SUV that fit all our luggage and provided a comfortable ride. Thanks, Auto RentID, for making our vacation smooth and memorable!', '2024-04-11 07:44:31', 1),
-(2, 'Iraq.Egypt@gmail.com', 'I was nervous about renting a car for the first time, but Auto RentID made the entire process so easy and reassuring. Their team helped me select the perfect car for my needs and budget, and I was pleasantly surprised by how new and clean the car was. I had a fantastic driving experience, and I\'ll definitely be using Auto RentID again for my future car rental needs!', '2024-04-11 07:46:05', 1);
+(1, 'Deustchland@gmail.com', 'I recently rented a car for a family road trip through Auto RentID, and I couldn\'t be happier with the experience. The booking process was a breeze, the car selection was impressive, and the prices were unbeatable. We found the perfect SUV that fit all our luggage and provided a comfortable ride. Thanks, Auto RentID, for making our vacation smooth and memorable!', '2017-06-18 07:44:31', 1),
+(2, 'Iraq.Egypt@gmail.com', 'I was nervous about renting a car for the first time, but Auto RentID made the entire process so easy and reassuring. Their team helped me select the perfect car for my needs and budget, and I was pleasantly surprised by how new and clean the car was. I had a fantastic driving experience, and I\'ll definitely be using Auto RentID again for my future car rental needs!', '2017-06-18 07:46:05', 1);
 
 -- --------------------------------------------------------
 
@@ -225,10 +224,10 @@ CREATE TABLE `tblusers` (
 --
 
 INSERT INTO `tblusers` (`id`, `FullName`, `EmailId`, `Password`, `ContactNo`, `dob`, `Address`, `City`, `Country`, `RegDate`, `UpdationDate`) VALUES
-(1, 'Harry Den', 'demo@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2147483647', NULL, NULL, NULL, NULL, '2024-04-08 05:59:27', '2024-04-10 08:02:58'),
-(2, 'AK', 'anuj@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '8285703354', NULL, NULL, NULL, NULL, '2024-04-08 06:00:49', '2024-04-18 13:03:09'),
-(3, 'Mark K', 'webhostingamigo@gmail.com', 'f09df7868d52e12bba658982dbd79821', '09999857868', '03/02/1990', 'PKL', 'PKL', 'PKL', '2024-04-14 03:01:43', '2024-04-23 10:07:41'),
-(4, 'Karl Marx Von Bismarck', 'Deustchland@gmail.com', '5c428d8875d2948607f3e3fe134d71b4', '9999857868', '', 'PKL', 'XYZ', 'XYZ', '2024-04-19 04:03:36', '2024-04-25 15:19:42'),
+(1, 'Harry Den', 'demo@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2147483647', NULL, NULL, NULL, NULL, '2017-06-17 19:59:27', '2017-06-26 21:02:58'),
+(2, 'AK', 'anuj@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '8285703354', NULL, NULL, NULL, NULL, '2017-06-17 20:00:49', '2017-06-26 21:03:09'),
+(3, 'Mark K', 'webhostingamigo@gmail.com', 'f09df7868d52e12bba658982dbd79821', '09999857868', '03/02/1990', 'PKL', 'PKL', 'PKL', '2017-06-17 20:01:43', '2017-06-17 21:07:41'),
+(4, 'Karl Marx Von Bismarck', 'Deustchland@gmail.com', '5c428d8875d2948607f3e3fe134d71b4', '9999857868', '', 'PKL', 'XYZ', 'XYZ', '2017-06-17 20:03:36', '2024-04-08 06:22:59'),
 (5, 'Hassan Al-Banna bin Saddam', 'Iraq.Egypt@gmail.com', 'cbd7cbceadc76d529eba3921446fad4f', '789323546', '04/28/1937', 'Palace', 'Baghdad', 'Iraq', '2024-04-08 06:57:31', NULL);
 
 -- --------------------------------------------------------
@@ -272,11 +271,11 @@ CREATE TABLE `tblvehicles` (
 --
 
 INSERT INTO `tblvehicles` (`id`, `VehiclesTitle`, `VehiclesBrand`, `VehiclesOverview`, `PricePerDay`, `FuelType`, `ModelYear`, `SeatingCapacity`, `Vimage1`, `Vimage2`, `Vimage3`, `Vimage4`, `Vimage5`, `AirConditioner`, `PowerDoorLocks`, `AntiLockBrakingSystem`, `BrakeAssist`, `PowerSteering`, `DriverAirbag`, `PassengerAirbag`, `PowerWindows`, `CDPlayer`, `CentralLocking`, `CrashSensor`, `LeatherSeats`, `RegDate`, `UpdationDate`) VALUES
-(1, '5 Series', 2, 'A luxury sedan built for those who lead – and those who know style is nothing without substance.', 200, 'Petrol', 2024, 5, 'i5-bev.png', 'new-bmw-5-series-2023-backside.jpg', 'BMW_i5_eDrive40_Tanzanite-Blue-metallic_053-scaled.jpg', 'bmw_5series_500.jpg', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2024-04-07 11:46:23', '2024-04-27 07:08:03'),
-(2, 'X7', 2, 'The BMW X7 is a luxury SUV that can seat seven people and is BMW\'s largest vehicle. It has a luxurious interior, a plush ride, and plenty of interior space. Reviews note the X7 has a high-quality build, swift acceleration, and is comfortable and quiet on the road.', 350, 'Petrol', 2024, 7, 'X7_2024.png', 'X7_Interior.jpg', 'X7.jpg', '2023-bmw-x7-xdrive-40i148-641c5b429bee5.jpg', '', 1, 1, 1, 1, 1, 1, 1, NULL, 1, 1, NULL, NULL, '2024-04-08 06:16:17', '2024-04-27 07:08:03'),
-(3, 'GT-R', 4, 'The 2023 Nissan GT-R is a four-passenger coupe with a twin-turbocharged 3.8-liter V6 engine that produces 565 horsepower and 467 lb-ft of torque. ', 500, 'Petrol', 2023, 4, 'nissan1.jpg', 'nissan2.jpg', 'nissan3.jpg', 'NissanGTR-backseat.jpg', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2024-04-07 16:18:20', '2024-04-27 07:08:03'),
-(4, 'A8L', 3, 'The 2024 Audi A8 L is a five-seater luxury sedan with a sharpened design, including a wider Singleframe grill, more upright side air intakes, and freshly styled headlights. ', 375, 'Petrol', 2024, 5, '2024-audi-a8-102-64b6b2b1ae524.jpg', 'A8New.jpg', 'A82024.jpg', 'audi-a8l-full-rear-view-563470.jpg', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2024-04-07 16:18:43', '2024-04-27 07:08:03'),
-(5, 'Vellfire', 5, 'The 2018 Toyota Vellfire is a luxury minivan with a 2.494 cc V6 engine that produces 180 horsepower and 235 Nm of torque. It has an 8-level DSG transmission, ABS, EBD, and BA technology, and good soundproofing.', 185, 'Petrol', 2018, 7, 'vellfire1.jpg', 'vellfire2.jpg', 'vellfire3.jpg', 'vellfire4.jpg', NULL, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2024-04-07 11:57:09', '2024-04-27 07:08:48');
+(1, '5 Series', 2, 'A luxury sedan built for those who lead – and those who know style is nothing without substance.', 200, 'Petrol', 2024, 5, 'i5-bev.png', 'new-bmw-5-series-2023-backside.jpg', 'BMW_i5_eDrive40_Tanzanite-Blue-metallic_053-scaled.jpg', 'bmw_5series_500.jpg', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2017-06-19 11:46:23', '2024-04-08 08:51:53'),
+(2, 'X7', 2, 'The BMW X7 is a luxury SUV that can seat seven people and is BMW\'s largest vehicle. It has a luxurious interior, a plush ride, and plenty of interior space. Reviews note the X7 has a high-quality build, swift acceleration, and is comfortable and quiet on the road.', 350, 'Petrol', 2024, 7, 'X7_2024.png', 'X7_Interior.jpg', 'X7.jpg', '2023-bmw-x7-xdrive-40i148-641c5b429bee5.jpg', '', 1, 1, 1, 1, 1, 1, 1, NULL, 1, 1, NULL, NULL, '2017-06-19 16:16:17', '2024-04-08 07:51:31'),
+(3, 'GT-R', 4, 'The 2023 Nissan GT-R is a four-passenger coupe with a twin-turbocharged 3.8-liter V6 engine that produces 565 horsepower and 467 lb-ft of torque. ', 500, 'Petrol', 2023, 4, 'nissan1.jpg', 'nissan2.jpg', 'nissan3.jpg', 'NissanGTR-backseat.jpg', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2017-06-19 16:18:20', '2024-04-14 07:45:03'),
+(4, 'A8L', 3, 'The 2024 Audi A8 L is a five-seater luxury sedan with a sharpened design, including a wider Singleframe grill, more upright side air intakes, and freshly styled headlights. ', 375, 'Petrol', 2024, 5, '2024-audi-a8-102-64b6b2b1ae524.jpg', 'A8New.jpg', 'A82024.jpg', 'audi-a8l-full-rear-view-563470.jpg', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2017-06-19 16:18:43', '2024-04-08 08:32:40'),
+(5, 'Vellfire', 5, 'The 2018 Toyota Vellfire is a luxury minivan with a 2.494 cc V6 engine that produces 180 horsepower and 235 Nm of torque. It has an 8-level DSG transmission, ABS, EBD, and BA technology, and good soundproofing.', 185, 'Petrol', 2018, 7, 'vellfire1.jpg', 'vellfire2.jpg', 'vellfire3.jpg', 'vellfire4.jpg', NULL, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2017-06-20 17:57:09', '2024-04-08 08:46:39');
 
 --
 -- Indexes for dumped tables
@@ -356,7 +355,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `tblbooking`
 --
 ALTER TABLE `tblbooking`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tblbrands`
